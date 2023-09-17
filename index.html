@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        *{
+            font-family: 'Montserrat Alternates', sans-serif;
+            margin: 0;
+        }
+
+        .logo{
+            margin-left: 50px;
+        }
+
+        .logo h1{
+          font-size: 26px;
+          margin-top: 20px;
+        }
+
+
+        nav{
+            display: flex;
+        }
+
+        .nav-links{
+            margin-left: auto;
+            margin-right: 50px;
+        }
+
+        .nav-links ul{
+            margin-top: 22px;
+            
+        }
+
+        .nav-links ul li{
+            display: inline-block;
+            padding: 0 20px;
+            font-size: 18px;
+        }
+
+        .nav-links ul a{
+            color: black;
+            font-weight: 500;
+        }
+        h1 span{
+            color: red;
+            font-weight: 900;
+        }
+
+
+        .nav-links ul button{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 0;
+            border-radius: 7px;
+        }
+
+        .nav-links ul button li:hover{
+            /* padding: 8px 2px; */
+            transition: 0.5s;
+            font-size: 20px;
+        }
+
+        /* .bg{
+            background-image: url(hyundai-motor-group-9TUHjKs81I8-unsplash.jpg);
+            height: 80vh;
+            background-size: cover;
+            background-position: -10px;
+            background-repeat: no-repeat;
+        } */
+
+
+        .bg{
+            background-image: url(hyundai-motor-group-9TUHjKs81I8-unsplash.jpg);
+            height: 80vh;
+            background-size: cover;
+            background-position: 0px;
+            background-repeat: no-repeat;
+        }
+
+
+        .hero-text{
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .hero-head h3{
+            font-size: 60px;
+            color: white;
+            margin-top: 300px;
+        }
+
+        .hero-paragraph p{
+            color: white;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .about-us{
+            height: 70vh;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .about-us h2{
+            text-align: center;
+            margin-top: 100px;
+            color: red;
+        }
+
+        .about-us p{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .about-us-container{
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-evenly;
+            margin-top: 100px;
+        }
+
+        .about-us-container p{
+            text-align: start;
+            line-height: 30px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .about-us-container img{
+            border-radius: 10px;
+        }
+
+        .about-us-child2 h3{
+            color: red;
+            font-weight: 850;
+            margin-top: 20px;
+        }
+
+        .about-us-child2 a button{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 7px;
+            margin-top: 30px;
+        }
+
+        .features{
+            height: 70vh;
+            background-color: black;
+            padding-top: 100px;
+            /* text-align: center; */
+        }
+
+        .features-container{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 100px;
+        
+
+        }
+
+        .features-bg{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .features h2{
+            color: white;
+            text-align: center;
+        }
+
+        .features p{
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .features-container-1{
+            background-color: white;
+            padding: 50px 50px;
+        }
+
+        .features-container-1 p{
+            color: black;
+            text-align: start;
+        }
+
+        .features-container-1 h3{
+            color: red;
+            text-align: start;
+            margin-bottom: 20px;
+        }
+
+        .cta{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+
+        .cta-bg{
+            /* background-color: red; */
+            background-image: url(hyundai-motor-group-9TUHjKs81I8-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0%;
+            padding: 150px 400px;
+            border-radius: 10px;
+        }
+
+        .cta-bg h2{
+            color: white;
+            text-align: center;
+        }
+
+        .cta-bg button{
+            margin-top: 10px;
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .footer{
+            height: 60vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .foot h2{
+            color: white;
+            text-align: center;
+            
+        }
+
+        .foot a{
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 0 50px;
+        }
+
+        .foot p{
+            color: white;
+            text-align: center;
+            margin-bottom: 3e0px;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="bg">
+        <nav>
+            <div class="logo">
+                <h1>LetIt<span>Ride</span></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>About</li></a>
+                    <a href=""><button><li><strong>Book A Ride</strong></li></button></a>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hero-text">
+            <div class="hero-parent">
+              <div class="hero-head">
+                 <h3>Let's Drive</h3>
+              </div>
+              <div class="hero-paragraph">
+                 <p>Whereever, Whenever...</p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="about-us-container">
+            <div class="about-us-child1">
+              <img src="hyundai-motor-group-9TUHjKs81I8-unsplash.jpg" width="400px" height="250px">
+            </div>
+            <div class="about-us-child2">
+              <h3>Let It Ride Brand...</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Repudiandae quae itaque sed doloremque quaerat <br>vitae possimus hic quidem eum animi adipisci ipsum, <br>placeat delectus maiores, excepturi debitis rerum sit expedita...</p>
+              <a href="#"><button>Read More</button></a>
+            </div>       
+        </div>
+    </section>
+
+    <section class="features">
+         <h2>Our Services</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+        <div class="features-container">
+            <div class="features-container-1">
+                <h3>Lorem Stop</h3>
+                <p>Lorem ipsum<br> dolor, sit amet<br> consectetur<br> adipisicing elit.</p>
+            </div>
+
+            <div class="features-container-1">
+                <h3>Lorem Stop</h3>
+                <p>Lorem ipsum<br> dolor, sit amet<br> consectetur <br>adipisicing elit.</p>
+            </div>
+
+            <div class="features-container-1">
+                <h3>Lorem Stop</h3>
+                <p>Lorem ipsum<br> dolor, sit amet<br> consectetur<br> adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+ 
+        <div class="cta-bg">
+           <h2>Reach out to us via</h2>
+           <button>Facebook</button>
+           <button>Twitter</button>
+           <button>Instagram</button>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <footer>
+            <div class="foot">
+            <h2>LetItRide.com</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Search</a>
+        </div>
+        </footer>
+    </section>
+</body>
+</html>
